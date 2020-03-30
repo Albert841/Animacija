@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.div1 {
+    width: 650px;
+    height: 500px;
+    background-color: #050210;
+	position:relative;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.krug1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg,  #55fb9f, #b97aff,#fb5dad);
+  border-radius:50%;
+  filter: blur(1px);
+  box-shadow: 12px 12px 100px 5px grey;
+ 
+
+
+
+}
+.krug2 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg,  #55fb9f, #b97aff,#fb5dad);
+  border-radius:50%;
+  margin: auto;
+  position:absolute;
+  box-shadow: 12px 12px 80px 3px grey;
+ 
+
+  
+}
+.krug3 {
+  width: 260px;
+  height: 260px;
+  background: #050210;
+  border-radius:50%;
+  margin:20px auto;
+  
+}
+.puls1 {
+  width: 260px;
+  height: 260px;
+  background: #08021f;
+  border-radius:50%;
+  margin:20px auto;
+   
+}
+.puls2 {
+  width: 260px;
+  height: 260px;
+  background: #050210;
+  border-radius:50%;
+  margin:20px auto;
+   
+}
+
+ @keyframes pulsation {
+  0% { transform: scale(0,0);  }
+  50%{ transform: scale(0.5,0.5);  }
+  100%{ transform: scale(1,1);  }
+}
+.puls1{
+ animation: pulsation 1.5s linear infinite;
+ }
+ .puls2{
+ animation: pulsation 1.5s linear infinite;
+ }
+ 
+@keyframes vrti {
+    from { transform:rotate(0deg); }
+    to { transform:rotate(360deg); }
+}
+.krug2 {
+  animation: vrti 2s linear infinite;
+  
+}
+
+ 
+
+
+
+ </style>
+</head>
+<body>
+<div class="div1">
+<div class="krug1">
+  <div class="krug2">
+  <div class="krug3">
+  <div class="puls1">
+  <div class="puls2">
+  
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
